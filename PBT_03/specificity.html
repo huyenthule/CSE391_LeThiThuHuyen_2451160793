@@ -1,0 +1,165 @@
+\```html id="rx84ms"
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Priority Test</title>
+
+    <link rel="stylesheet" href="specificity.css" />
+  </head>
+
+  <body>
+    <div class="page-container">
+      <header class="top-area">
+        <h1>Bài B3 — CSS Specificity</h1>
+
+        <p>So sánh mức độ ưu tiên giữa nhiều selector khác nhau.</p>
+      </header>
+
+      <section class="card-area">
+        <div class="section-title">
+          <h2>Phần tử đang được kiểm tra</h2>
+        </div>
+
+        <div class="preview-box">
+          <p id="demo" class="text highlight">Hello World</p>
+        </div>
+
+        <div class="status-box">
+          <p>
+            Kết quả cuối cùng:
+            <strong class="pink-text">hotpink</strong>
+          </p>
+
+          <p>
+            Selector chiến thắng:
+            <code>#demo.text.highlight</code>
+          </p>
+        </div>
+      </section>
+
+      <section class="card-area">
+        <div class="section-title">
+          <h2>Danh sách độ ưu tiên</h2>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Selector</th>
+                <th>Specificity</th>
+                <th>Kết quả màu</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><code>*</code></td>
+                <td>(0,0,0)</td>
+                <td class="dimgray-color">dimgray</td>
+              </tr>
+
+              <tr>
+                <td>2</td>
+                <td><code>p</code></td>
+                <td>(0,0,1)</td>
+                <td class="slategray-color">slategray</td>
+              </tr>
+
+              <tr>
+                <td>3</td>
+                <td><code>div p</code></td>
+                <td>(0,0,2)</td>
+                <td class="steelblue-color">steelblue</td>
+              </tr>
+
+              <tr>
+                <td>4</td>
+                <td><code>.text</code></td>
+                <td>(0,1,0)</td>
+                <td class="teal-color">teal</td>
+              </tr>
+
+              <tr>
+                <td>5</td>
+                <td><code>.highlight</code></td>
+                <td>(0,1,0)</td>
+                <td class="cyan-color">darkcyan</td>
+              </tr>
+
+              <tr>
+                <td>6</td>
+                <td><code>p.text</code></td>
+                <td>(0,1,1)</td>
+                <td class="blue-color">mediumblue</td>
+              </tr>
+
+              <tr>
+                <td>7</td>
+                <td><code>p.text.highlight</code></td>
+                <td>(0,2,1)</td>
+                <td class="violet-color">darkviolet</td>
+              </tr>
+
+              <tr>
+                <td>8</td>
+                <td><code>#demo</code></td>
+                <td>(1,0,0)</td>
+                <td class="red-color">darkred</td>
+              </tr>
+
+              <tr>
+                <td>9</td>
+                <td><code>#demo.text</code></td>
+                <td>(1,1,0)</td>
+                <td class="crimson-color">crimson</td>
+              </tr>
+
+              <tr class="winner-line">
+                <td>10</td>
+
+                <td>
+                  <code>#demo.text.highlight</code>
+                </td>
+
+                <td>(1,2,1)</td>
+
+                <td class="pink-color">hotpink</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card-area">
+        <div class="section-title">
+          <h2>Phân tích kết quả</h2>
+        </div>
+
+        <div class="analysis-content">
+          <p>
+            Element
+            <code>&lt;p id="demo" class="text highlight"&gt;</code>
+            nhận màu
+            <strong class="pink-text">hotpink</strong>
+            vì selector
+            <code>#demo.text.highlight</code>
+            có specificity cao nhất.
+          </p>
+
+          <p>Trong CSS, specificity được ưu tiên trước vị trí xuất hiện.</p>
+
+          <p>
+            Chỉ khi hai selector có cùng specificity thì rule xuất hiện sau mới
+            ghi đè rule trước.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+```
