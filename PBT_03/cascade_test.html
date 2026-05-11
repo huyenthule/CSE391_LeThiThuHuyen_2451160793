@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cascade Lab</title>
+
+    <link rel="stylesheet" href="cascade.css" />
+  </head>
+
+  <body>
+    <main class="page-wrapper">
+      <header class="page-header">
+        <h1>Câu C2 — Cascade Puzzle</h1>
+
+        <p>
+          Phân tích cách CSS Cascade hoạt động giữa specificity, inherit và
+          !important.
+        </p>
+      </header>
+
+      <section class="result-section">
+        <div class="section-head">
+          <h2>Kết quả dự đoán</h2>
+        </div>
+
+        <div class="table-box">
+          <table>
+            <thead>
+              <tr>
+                <th>Đối tượng</th>
+                <th>Font Size</th>
+                <th>Màu chữ</th>
+                <th>Nguyên nhân</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Tiêu đề sản phẩm A</td>
+                <td>20px</td>
+                <td class="green-text">green</td>
+                <td>
+                  Selector <code>.highlight</code> sử dụng
+                  <code>!important</code>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Mô tả sản phẩm A</td>
+                <td>14px</td>
+                <td class="blue-text">blue</td>
+                <td>
+                  Thuộc tính color kế thừa từ
+                  <code>.card</code>
+                </td>
+              </tr>
+
+              <tr>
+                <td>Tiêu đề sản phẩm B</td>
+                <td>20px</td>
+                <td class="blue-text">blue</td>
+                <td>Kế thừa màu từ phần tử cha</td>
+              </tr>
+
+              <tr>
+                <td>Mô tả sản phẩm B</td>
+                <td>14px</td>
+                <td class="green-text">green</td>
+                <td>
+                  <code>.highlight</code>
+                  ghi đè các rule khác
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="preview-section">
+        <div class="section-head">
+          <h2>Hiển thị thực tế</h2>
+        </div>
+
+        <div class="card-layout">
+          <article class="card" id="featured">
+            <h2 class="title highlight">Sản phẩm A</h2>
+
+            <p>Mô tả sản phẩm</p>
+          </article>
+
+          <article class="card">
+            <h2 class="title">Sản phẩm B</h2>
+
+            <p class="highlight">Mô tả sản phẩm B</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="explain-section">
+        <div class="section-head">
+          <h2>Phân tích Cascade</h2>
+        </div>
+
+        <div class="explain-list">
+          <div class="explain-item">
+            <h3>Sản phẩm A</h3>
+
+            <p>
+              Rule
+              <code>.highlight { color: green !important; }</code>
+              có độ ưu tiên cao hơn selector chứa ID.
+            </p>
+          </div>
+
+          <div class="explain-item">
+            <h3>Mô tả sản phẩm</h3>
+
+            <p>
+              Thuộc tính
+              <code>color: inherit</code>
+              lấy giá trị từ phần tử cha.
+            </p>
+          </div>
+
+          <div class="explain-item">
+            <h3>Sản phẩm B</h3>
+
+            <p>
+              Tiêu đề kế thừa màu xanh từ
+              <code>.card</code>.
+            </p>
+          </div>
+
+          <div class="explain-item">
+            <h3>Mô tả sản phẩm B</h3>
+
+            <p>
+              Class
+              <code>.highlight</code>
+              sử dụng
+              <code>!important</code>
+              nên ghi đè toàn bộ.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
