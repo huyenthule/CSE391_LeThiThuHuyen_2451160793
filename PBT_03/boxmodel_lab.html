@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Box Model Lab</title>
+
+    <link rel="stylesheet" href="boxmodel.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="top-header">
+        <h1>Bài B2 — Box Model Lab</h1>
+
+        <p>
+          Minh họa sự khác nhau giữa
+          <code>content-box</code>
+          và
+          <code>border-box</code>
+        </p>
+      </header>
+
+      <section class="section-card">
+        <div class="section-title">
+          <h2>Phần 1 — So sánh content-box và border-box</h2>
+        </div>
+
+        <div class="intro-text">
+          Hai hộp dưới đây đều sử dụng:
+          <strong> width: 300px / padding: 20px / border: 5px </strong>
+        </div>
+
+        <div class="compare-area">
+          <div class="sample-box content-demo">
+            <div class="label-box">Hộp 1 — content-box</div>
+
+            <div class="detail-box">
+              <p>width: 300px</p>
+              <p>padding: 20px</p>
+              <p>border: 5px solid</p>
+            </div>
+
+            <div class="result-box">
+              Kích thước thực tế:
+              <strong>350px</strong>
+            </div>
+          </div>
+
+          <div class="sample-box border-demo">
+            <div class="label-box">Hộp 2 — border-box</div>
+
+            <div class="detail-box">
+              <p>width: 300px</p>
+              <p>padding: 20px</p>
+              <p>border: 5px solid</p>
+            </div>
+
+            <div class="result-box">
+              Kích thước thực tế:
+              <strong>300px</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="measure-panel">
+          <div class="measure-item">
+            <span>content-box → 350px</span>
+            <div class="measure-line line-large"></div>
+          </div>
+
+          <div class="measure-item">
+            <span>border-box → 300px</span>
+            <div class="measure-line line-small"></div>
+          </div>
+        </div>
+
+        <div class="explain-wrapper">
+          <h3>Giải thích</h3>
+
+          <ul>
+            <li>
+              Với <strong>content-box</strong>, thuộc tính width chỉ tính phần
+              nội dung bên trong.
+            </li>
+
+            <li>Padding và border sẽ cộng thêm vào kích thước thật.</li>
+
+            <li>
+              Với <strong>border-box</strong>, width đã bao gồm content, padding
+              và border.
+            </li>
+
+            <li>Tổng chiều rộng vẫn giữ nguyên đúng kích thước khai báo.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section-card">
+        <div class="section-title">
+          <h2>Phần 2 — Layout 3 cột trong container 1000px</h2>
+        </div>
+
+        <div class="layout-demo broken-case">
+          <h3>Trường hợp A — Không dùng border-box</h3>
+
+          <p class="case-description">
+            Tổng chiều rộng thực tế lớn hơn 1000px nên layout bị vỡ.
+          </p>
+
+          <div class="layout-container bad-layout">
+            <aside class="layout-box sidebar-box">
+              <strong>Sidebar</strong>
+              <span>280px thực tế</span>
+            </aside>
+
+            <main class="layout-box content-box-main">
+              <strong>Content</strong>
+              <span>540px thực tế</span>
+            </main>
+
+            <aside class="layout-box ads-box">
+              <strong>Ads</strong>
+              <span>280px thực tế</span>
+            </aside>
+          </div>
+
+          <div class="calc-box">280 + 540 + 280 = <strong>1100px</strong></div>
+        </div>
+
+        <div class="layout-demo fixed-case">
+          <h3>Trường hợp B — Có dùng border-box</h3>
+
+          <p class="case-description">
+            Các cột giữ đúng tổng kích thước 1000px.
+          </p>
+
+          <div class="layout-container good-layout">
+            <aside class="layout-box sidebar-box fixed">
+              <strong>Sidebar</strong>
+              <span>250px</span>
+            </aside>
+
+            <main class="layout-box content-box-main fixed">
+              <strong>Content</strong>
+              <span>500px</span>
+            </main>
+
+            <aside class="layout-box ads-box fixed">
+              <strong>Ads</strong>
+              <span>250px</span>
+            </aside>
+          </div>
+
+          <div class="calc-box">250 + 500 + 250 = <strong>1000px</strong></div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
