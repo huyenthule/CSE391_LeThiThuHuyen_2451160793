@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #ede9fe);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 40px auto;
+}
+
+.top-area {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.top-area h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.top-area p {
+  font-size: 18px;
+  color: #4b5563;
+}
+
+.card-area {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 18px;
+  padding: 35px;
+  margin-bottom: 35px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(4px);
+}
+
+.section-title {
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  color: #1e293b;
+}
+
+.preview-box {
+  background: #f8fafc;
+  border: 2px dashed #94a3b8;
+  border-radius: 12px;
+  padding: 45px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#demo {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.status-box {
+  background: #eef2ff;
+  border-left: 6px solid #6366f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.status-box p {
+  margin-bottom: 10px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+thead {
+  background: #312e81;
+  color: white;
+}
+
+th {
+  padding: 16px;
+  text-align: left;
+  font-size: 16px;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #dbe4f0;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+tbody tr:hover {
+  background: #eef2ff;
+  transition: 0.2s ease;
+}
+
+code {
+  background: #e2e8f0;
+  color: #111827;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.winner-line td {
+  background: #fdf2f8;
+  font-weight: bold;
+}
+
+.analysis-content {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.analysis-content p {
+  margin-bottom: 16px;
+}
+
+.dimgray-color {
+  color: dimgray;
+  font-weight: bold;
+}
+
+.slategray-color {
+  color: slategray;
+  font-weight: bold;
+}
+
+.steelblue-color {
+  color: steelblue;
+  font-weight: bold;
+}
+
+.teal-color {
+  color: teal;
+  font-weight: bold;
+}
+
+.cyan-color {
+  color: darkcyan;
+  font-weight: bold;
+}
+
+.blue-color {
+  color: mediumblue;
+  font-weight: bold;
+}
+
+.violet-color {
+  color: darkviolet;
+  font-weight: bold;
+}
+
+.red-color {
+  color: darkred;
+  font-weight: bold;
+}
+
+.crimson-color {
+  color: crimson;
+  font-weight: bold;
+}
+
+.pink-color {
+  color: hotpink;
+  font-weight: bold;
+}
+
+.pink-text {
+  color: hotpink;
+}
+
+* {
+  color: dimgray;
+}
+
+p {
+  color: slategray;
+}
+
+div p {
+  color: steelblue;
+}
+
+.text {
+  color: teal;
+}
+
+.highlight {
+  color: darkcyan;
+}
+
+p.text {
+  color: mediumblue;
+}
+
+p.text.highlight {
+  color: darkviolet;
+}
+
+#demo {
+  color: darkred;
+}
+
+#demo.text {
+  color: crimson;
+}
+
+#demo.text.highlight {
+  color: hotpink;
+}
