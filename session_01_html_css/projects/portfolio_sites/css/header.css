@@ -1,0 +1,59 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+}
+
+.logo-area h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.navbar {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #334155;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: var(--color-primary);
+}
+
+.menu-check,
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-button {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .menu-check:checked ~ .navbar {
+    display: flex;
+  }
+}
