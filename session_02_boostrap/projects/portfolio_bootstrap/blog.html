@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Lê Thu Huyền</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/custom-theme.css" rel="stylesheet">
+    <link href="css/blog.css" rel="stylesheet">
+    <link href="css/comments.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="text-primary">Huyền</span>Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuBlog"
+                aria-controls="menuBlog" aria-expanded="false" aria-label="Mở menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="menuBlog" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#trang-chu">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gioithieu">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#duan">Dự án</a></li>
+                    <li class="nav-item"><a class="nav-link active bg-primary rounded-3" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="blog-header text-white py-5 mt-5">
+        <div class="container">
+            <nav aria-label="Đường dẫn">
+                <ol class="breadcrumb mb-3">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white-50">Trang chủ</a></li>
+                    <li class="breadcrumb-item active text-white">Blog</li>
+                </ol>
+            </nav>
+            <h1 class="display-5 fw-bold mb-2">Bài viết mới nhất</h1>
+            <p class="lead text-white-50 mb-0">Chia sẻ về lập trình web, Bootstrap và thiết kế giao diện</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <article class="card mb-4 border-0 shadow-sm blog-card">
+                        <img src="https://picsum.photos/800/320?random=21" class="card-img-top" alt="Chuyển đổi Bootstrap">
+                        <div class="card-body">
+                            <span class="badge bg-primary">Công nghệ</span>
+                            <h2 class="card-title h4 fw-bold mt-2">Chuyển portfolio sang Bootstrap 5</h2>
+                            <p class="text-muted small mb-3">
+                                Lê Thu Huyền &bull; 15 tháng 1, 2026 &bull; 5 phút đọc
+                            </p>
+                            <p class="card-text">
+                                Hướng dẫn thay lưới CSS tùy chỉnh bằng hệ thống cột Bootstrap, navbar responsive
+                                và các tiện ích typography có sẵn.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Đọc tiếp</a>
+                        </div>
+                    </article>
+
+                    <article class="card mb-4 border-0 shadow-sm blog-card">
+                        <img src="https://picsum.photos/800/320?random=22" class="card-img-top" alt="Sidebar blog">
+                        <div class="card-body">
+                            <span class="badge bg-success">Giao diện</span>
+                            <h2 class="card-title h4 fw-bold mt-2">Thiết kế blog có sidebar dính</h2>
+                            <p class="text-muted small mb-3">
+                                Lê Thu Huyền &bull; 10 tháng 1, 2026 &bull; 4 phút đọc
+                            </p>
+                            <p class="card-text">
+                                Sử dụng thẻ card, list group và lớp sticky-top để xây sidebar danh mục,
+                                bài viết gần đây và đám mây thẻ trên màn hình lớn.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Đọc tiếp</a>
+                        </div>
+                    </article>
+
+                    <article class="card mb-5 border-0 shadow-sm blog-card">
+                        <img src="https://picsum.photos/800/320?random=23" class="card-img-top" alt="Tùy biến theme">
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark">Theme</span>
+                            <h2 class="card-title h4 fw-bold mt-2">Tùy biến màu primary Bootstrap</h2>
+                            <p class="text-muted small mb-3">
+                                Lê Thu Huyền &bull; 5 tháng 1, 2026 &bull; 6 phút đọc
+                            </p>
+                            <p class="card-text">
+                                Ghi đè biến CSS --bs-primary, chỉnh border-radius và thang khoảng cách
+                                để giao diện khác biệt so với theme mặc định.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">Đọc tiếp</a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="col-lg-4">
+                    <div class="sticky-top pt-2" style="top: 88px;">
+                        <div class="card mb-4 border-0 shadow-sm sidebar-widget">
+                            <div class="card-body">
+                                <h2 class="h5 card-title mb-3">Tìm kiếm</h2>
+                                <div class="input-group">
+                                    <input type="search" class="form-control" placeholder="Tìm bài viết...">
+                                    <button class="btn btn-primary" type="button">Tìm</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-4 border-0 shadow-sm sidebar-widget">
+                            <div class="card-header bg-white">
+                                <h2 class="h5 mb-0">Danh mục</h2>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Công nghệ
+                                    <span class="badge bg-primary rounded-pill">8</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Giao diện
+                                    <span class="badge bg-success rounded-pill">5</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    Bootstrap
+                                    <span class="badge bg-info rounded-pill">6</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    CSS
+                                    <span class="badge bg-warning text-dark rounded-pill">4</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card mb-4 border-0 shadow-sm sidebar-widget">
+                            <div class="card-header bg-white">
+                                <h2 class="h5 mb-0">Bài viết gần đây</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex mb-3 gap-3">
+                                    <img src="https://picsum.photos/60/60?random=31" class="rounded" width="60" height="60" alt="">
+                                    <div>
+                                        <h3 class="h6 mb-1">Chuyển portfolio sang Bootstrap</h3>
+                                        <small class="text-muted">15/01/2026</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex mb-3 gap-3">
+                                    <img src="https://picsum.photos/60/60?random=32" class="rounded" width="60" height="60" alt="">
+                                    <div>
+                                        <h3 class="h6 mb-1">Sidebar blog dính</h3>
+                                        <small class="text-muted">10/01/2026</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <img src="https://picsum.photos/60/60?random=33" class="rounded" width="60" height="60" alt="">
+                                    <div>
+                                        <h3 class="h6 mb-1">Tùy biến theme Bootstrap</h3>
+                                        <small class="text-muted">05/01/2026</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card border-0 shadow-sm sidebar-widget">
+                            <div class="card-header bg-white">
+                                <h2 class="h5 mb-0">Thẻ</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <span class="badge bg-secondary">HTML</span>
+                                    <span class="badge bg-secondary">CSS</span>
+                                    <span class="badge bg-secondary">Bootstrap</span>
+                                    <span class="badge bg-secondary">JavaScript</span>
+                                    <span class="badge bg-secondary">UI</span>
+                                    <span class="badge bg-secondary">Responsive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light" id="comments">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="h4 fw-bold mb-4">3 bình luận</h2>
+
+                    <div class="card mb-4 border-0 shadow-sm comment-form">
+                        <div class="card-header bg-white">
+                            <h3 class="h5 mb-0">Để lại bình luận</h3>
+                        </div>
+                        <div class="card-body">
+                            <form id="commentForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="tenBinhLuan" class="form-label">Họ tên</label>
+                                        <input type="text" class="form-control" id="tenBinhLuan" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="emailBinhLuan" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="emailBinhLuan" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="noiDungBinhLuan" class="form-label">Nội dung</label>
+                                        <textarea class="form-control" id="noiDungBinhLuan" rows="4" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Gửi bình luận</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="comments-list">
+                        <div class="comment mb-4">
+                            <div class="d-flex">
+                                <img src="image/avatar.png" class="rounded-circle me-3" width="50" height="50" alt="Minh Anh">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h3 class="h6 mb-0">Nguyễn Minh Anh</h3>
+                                        <small class="text-muted">2 giờ trước</small>
+                                    </div>
+                                    <p class="mb-2">Bài viết rất dễ hiểu, cảm ơn bạn đã chia sẻ!</p>
+                                    <button type="button" class="btn btn-sm btn-link text-decoration-none p-0">
+                                        <i class="bi bi-reply"></i> Trả lời
+                                    </button>
+                                    <div class="comment reply ms-5 mt-3">
+                                        <div class="d-flex">
+                                            <img src="image/avatar.png" class="rounded-circle me-3" width="40" height="40" alt="Tác giả">
+                                            <div class="flex-grow-1">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h3 class="h6 mb-0">Tác giả</h3>
+                                                    <small class="text-muted">1 giờ trước</small>
+                                                </div>
+                                                <p class="mb-0">Cảm ơn bạn, mình sẽ tiếp tục đăng thêm bài mới.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment mb-4">
+                            <div class="d-flex">
+                                <img src="image/avatar.png" class="rounded-circle me-3" width="50" height="50" alt="Hoàng Nam">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h3 class="h6 mb-0">Trần Hoàng Nam</h3>
+                                        <small class="text-muted">5 giờ trước</small>
+                                    </div>
+                                    <p class="mb-2">Phần grid Bootstrap giúp mình tiết kiệm rất nhiều thời gian.</p>
+                                    <button type="button" class="btn btn-sm btn-link text-decoration-none p-0">
+                                        <i class="bi bi-reply"></i> Trả lời
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <div class="d-flex">
+                                <img src="image/avatar.png" class="rounded-circle me-3" width="50" height="50" alt="Lan Chi">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h3 class="h6 mb-0">Phạm Lan Chi</h3>
+                                        <small class="text-muted">1 ngày trước</small>
+                                    </div>
+                                    <p class="mb-2">Bạn có thể viết thêm về tùy biến theme bằng Sass không?</p>
+                                    <button type="button" class="btn btn-sm btn-link text-decoration-none p-0">
+                                        <i class="bi bi-reply"></i> Trả lời
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center text-md-start">
+            <p class="mb-0 text-muted">&copy; 2026 Lê Thu Huyền. Bảo lưu mọi quyền.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
