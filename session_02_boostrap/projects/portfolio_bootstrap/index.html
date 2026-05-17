@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Thu Huyền | Portfolio Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/custom-theme.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#trang-chu">
+                    <span class="text-primary">Huyền</span>Portfolio
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuChinh"
+                    aria-controls="menuChinh" aria-expanded="false" aria-label="Mở menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="menuChinh" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                        <li class="nav-item"><a class="nav-link" href="#trang-chu">Trang chủ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gioithieu">Giới thiệu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kynang">Kỹ năng</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#duan">Dự án</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#lienhe">Liên hệ</a></li>
+                        <li class="nav-item ms-lg-2">
+                            <a class="btn btn-primary btn-sm" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="trang-chu" class="hero-section bg-gradient text-white py-5">
+            <div class="container">
+                <div class="row min-vh-100 align-items-center justify-content-center text-center text-lg-start">
+                    <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0">
+                        <img src="image/avatar.png"
+                            alt="Lê Thu Huyền" class="rounded-circle img-fluid shadow-lg mx-auto d-block" style="max-width: 320px;">
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <p class="text-uppercase letter-spacing-2 mb-2 opacity-75">Sinh viên Hệ thống thông tin</p>
+                        <h1 class="display-4 fw-bold mb-3">
+                            Xin chào, mình là <span class="text-primary">Lê Thu Huyền</span>
+                        </h1>
+                        <p class="lead mb-4">
+                            Yêu thích thiết kế giao diện, phát triển website responsive và xây dựng trải nghiệm web hiện đại.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                            <a href="#duan" class="btn btn-primary btn-lg px-4">Xem dự án</a>
+                            <a href="#lienhe" class="btn btn-outline-light btn-lg px-4">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gioithieu" class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <h2 class="display-6 fw-bold mb-3">Giới thiệu bản thân</h2>
+                        <p class="lead text-muted mb-3">
+                            Mình yêu thích thiết kế giao diện tối giản, hiện đại và tối ưu trải nghiệm người dùng.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Hiện tại mình đang học và phát triển kỹ năng HTML, CSS, JavaScript và Bootstrap.
+                            Mục tiêu là trở thành lập trình viên web full-stack có thể tạo sản phẩm hữu ích.
+                        </p>
+                        <ul class="list-group list-group-flush border rounded-3 shadow-sm">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Dự án đã hoàn thành</span>
+                                <strong class="text-primary">12+</strong>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>Năm học tập</span>
+                                <strong class="text-primary">3+</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=600&q=80"
+                            alt="Làm việc nhóm" class="img-fluid rounded-4 shadow">
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap gap-2 justify-content-center mt-5">
+                    <span class="badge bg-primary">HTML5</span>
+                    <span class="badge bg-secondary">CSS3</span>
+                    <span class="badge bg-success">JavaScript</span>
+                    <span class="badge bg-info">Bootstrap</span>
+                    <span class="badge bg-warning text-dark">UI Design</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="kynang" class="py-5 bg-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold">Kỹ năng</h2>
+                    <p class="text-muted">Công nghệ mình đang sử dụng</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-xl-3">
+                        <article class="skill-card p-4 bg-white rounded-3 shadow-sm h-100">
+                            <p class="fw-semibold mb-2">HTML &amp; CSS</p>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" style="width: 92%;" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-primary fw-bold">92%</small>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <article class="skill-card p-4 bg-white rounded-3 shadow-sm h-100">
+                            <p class="fw-semibold mb-2">JavaScript</p>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" style="width: 78%;" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-success fw-bold">78%</small>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <article class="skill-card p-4 bg-white rounded-3 shadow-sm h-100">
+                            <p class="fw-semibold mb-2">Bootstrap</p>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-info" style="width: 85%;" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-info fw-bold">85%</small>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <article class="skill-card p-4 bg-white rounded-3 shadow-sm h-100">
+                            <p class="fw-semibold mb-2">Thiết kế UI</p>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-warning" style="width: 70%;" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <small class="text-warning fw-bold">70%</small>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="duan" class="py-5">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold">Dự án nổi bật</h2>
+                    <p class="text-muted">Một số sản phẩm mình đã xây dựng</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <article class="portfolio-card card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="https://picsum.photos/400/250?random=11" class="card-img-top" alt="Website portfolio">
+                            <div class="card-body">
+                                <span class="badge bg-primary mb-2">Frontend</span>
+                                <h3 class="card-title h5 fw-bold">Portfolio cá nhân</h3>
+                                <p class="card-text text-muted">Trang giới thiệu bản thân với HTML, CSS thuần và Bootstrap 5.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Chi tiết</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <article class="portfolio-card card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="https://picsum.photos/400/250?random=12" class="card-img-top" alt="Landing page">
+                            <div class="card-body">
+                                <span class="badge bg-success mb-2">Landing</span>
+                                <h3 class="card-title h5 fw-bold">Trang đích sản phẩm</h3>
+                                <p class="card-text text-muted">Giao diện responsive, tối ưu cho mobile và tablet.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Chi tiết</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <article class="portfolio-card card h-100 border-0 shadow-sm overflow-hidden">
+                            <img src="https://picsum.photos/400/250?random=13" class="card-img-top" alt="Blog layout">
+                            <div class="card-body">
+                                <span class="badge bg-info mb-2">Blog</span>
+                                <h3 class="card-title h5 fw-bold">Blog Bootstrap</h3>
+                                <p class="card-text text-muted">Bố cục blog có sidebar, thẻ bài viết và khu bình luận.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0 pb-3">
+                                <a href="blog.html" class="btn btn-outline-primary btn-sm">Xem blog</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lienhe" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-7">
+                        <div class="text-center mb-4">
+                            <h2 class="display-6 fw-bold">Liên hệ</h2>
+                            <p class="text-muted">Bạn có ý tưởng dự án? Hãy gửi tin nhắn cho mình.</p>
+                        </div>
+                        <div class="card border-0 shadow-lg">
+                            <div class="card-body p-4 p-md-5">
+                                <form id="contactForm" novalidate>
+                                    <div class="mb-3">
+                                        <label for="hoTen" class="form-label fw-semibold">Họ và tên</label>
+                                        <input type="text" class="form-control form-control-lg" id="hoTen" name="hoTen"
+                                            placeholder="Lê Thu Huyền" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="emailLienHe" class="form-label fw-semibold">Email</label>
+                                        <input type="email" class="form-control form-control-lg" id="emailLienHe" name="email"
+                                            placeholder="huyen@example.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="chuDe" class="form-label fw-semibold">Chủ đề</label>
+                                        <input type="text" class="form-control form-control-lg" id="chuDe" name="chuDe"
+                                            placeholder="Hợp tác dự án" required>
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="noiDungLienHe" class="form-label fw-semibold">Nội dung</label>
+                                        <textarea class="form-control form-control-lg" id="noiDungLienHe" name="noiDung" rows="5"
+                                            placeholder="Mô tả ngắn về dự án của bạn..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">
+                                        <i class="bi bi-send me-2"></i>Gửi tin nhắn
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <p class="mb-0 text-muted">&copy; 2026 Lê Thu Huyền. Bảo lưu mọi quyền.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
